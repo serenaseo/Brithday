@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "droog", sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%;
+    max-width: 450px; 
+    perspective: 1000px; 
+}
+
+.card {
+    width: 100%;
+    height: 350px; 
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s; 
+    cursor: pointer; 
+}
+
+.card:hover {
+    transform: rotateY(180deg); 
+}
+
+.card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+}
+
+.front, .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #0000000a; 
+}
+
+.back {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    z-index: 1; 
+}
+
+.text {
+    margin: 0; 
+}
+
+.image {
+    width: 100%;
+    height: auto; 
+    max-height: 350px; 
+    border-radius: 10px; 
+    backface-visibility: hidden; 
+    transition: transform 0.6s; 
+    z-index: 0;
+}
+
+.back:hover .image {
+    transform: scale(1.2); 
+}
+
+.back-button {
+    font-family: "droog", sans-serif; 
+    color: rgb(229, 255, 0); 
+    text-decoration: none;
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    transition: color 0.3s; 
+}
+
+.back-button:hover {
+    color: rgba(229, 255, 0, 0.7); 
+}
+
+.font3 {
+    font-family: "Raleway", sans-serif; 
+    font-weight: 700; 
+    font-style: normal; 
+}

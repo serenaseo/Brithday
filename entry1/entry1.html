@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April’s Elegy: A Timeless Visual Odyssey Through Two Decades</title>
+    <link rel="stylesheet" href="1style.css"> 
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="video.mp4/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <button class="transparent-button" onclick="toggleSound()">!     CLICK     !</button>
+
+    <script>
+        function toggleSound() {
+            var video = document.getElementById('background-video');
+            video.muted = !video.muted;  
+            if (video.muted) {
+                console.log("Sound muted");
+            } else {
+                console.log("Sound unmuted");
+            }
+        }
+    </script>
+
+    <p>
+        <a href="entry2.html">Intro</a>
+
+
+        <a href="entry3.html">Dear Serena</a>
+
+
+        <a href="entry4.html">2004</a>
+
+
+        <a href="entry5.html">2005</a>
+    </p>
+
+    <a href="serenahome.html" class="back-button">&#8592; Back</a> 
+    
+</body>  
+</html>

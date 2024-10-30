@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Kalam:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Dawning of a New Day', cursive; 
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    color: white; 
+
+
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #00000000; 
+}
+
+.nav-link {
+    font-size: 3rem; 
+}
+
+.nav-link.home {
+    color: #f78ff2; 
+}
+
+.nav-link.project {
+
+}
+
+.nav-link.contact {
+    color: #ffc233; 
+}
+
+/* Hover effect */
+.nav-link:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease; 
+}
+
+
+@media (max-width: 768px) {
+    .nav-link.home {
+        color: #FFBD33; 
+        font-size: 1.1rem;
+    }
+
+    .nav-link.project {
+        color: #57FF33; 
+        font-size: 1.1rem;
+    }
+
+    .nav-link.contact {
+        color: #f78ff2; 
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 1rem; 
+    }
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+
+.image-container {
+    position: relative; 
+    width: 90%;
+    max-width: 800px; 
+}
+
+.image-item {
+    position: relative; 
+}
+
+.image-item img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0; 
+    transition: opacity 0.2s ease;
+}
+
+
+.image-item img:first-child {
+    opacity: 1; 
+}
+
+.image-item:hover img {
+    opacity: 1; 
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .image-item {
+        width: 100%; 
+        height: auto; 
+    }
+}

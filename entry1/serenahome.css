@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.font3{
+ font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <700>;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+.font1{  font-family: "Cutive Mono", monospace;word-spacing: -5px;
+    word-spacing: -5px;
+    letter-spacing: -1px; 
+    line-height: 1.2; 
+    }
+    
+    
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+    .font2{font-family:"Explora", serif;
+        
+        font-weight: 400;
+        font-style: normal;
+}
+   
+
+
+body {
+    background-color: rgba(238, 9, 9, 0.945);
+}
+
+h1{
+color:black;
+text-align:center;
+font-size: 180px;
+position: relative;          
+top: 13px;                     
+
+
+}
+
+
+
+
+.my-image {
+    width: 800px; 
+    height: auto; 
+    object-fit: contain; 
+    max-width: 100%;
+    margin-top: 50px;
+    
+}
+
+
+.redTitles {
+    color: rgb(255, 255, 255);
+
+}
+
+.custom-position {
+    width: 500px; 
+    line-height: 1; 
+    text-align: left; 
+    letter-spacing: -2px; 
+    margin-left: 20cm; 
+    margin-top: -20.7cm; 
+    position: relative; 
+}
+
+
+h2{ text-align: right;
+    text-decoration: wavy;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:10;
+
+}
+
+
+.box-button {
+    display: inline-block;          
+    padding: 10px 20px;            
+    background-color: transparent;  
+    color: rgb(3, 3, 3);           
+    text-align: center;            
+    border-radius: 5px;            
+    text-decoration: none;          
+    border: 1px solid rgb(0, 0, 0); 
+    transition: border-color 0.3s;  
+    margin-left: 1500px;           
+    min-width: 80px;               
+    min-height: 20px;              
+}
+
+.box-button:hover {
+    border-color: rgb(0, 0, 0);    
+}
+}
+
+
+
+
+
+.header-container {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;           
+    width: 100%;                    
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 24px;                
+    margin: 0;  
+  
+
+}
+
+
+.left-align {
+    text-align: left;              
+    flex: 1;                      
+    text-decoration: underline;   
+    text-underline-offset: 1.5px;   
+
+ 
+    position: relative;          
+    top: -100px;                     
+    left: 110px;                   
+
+    
+}
+
+
+.resized-image {
+    width: 550px;  
+    height: 700px;  
+    margin-left: 110px;
+    
+    position: relative;          
+    top: -135px;                     
+                     
+
+}
+
+.move-right{
+    margin-left:4cm
+}
+
+P{
+    font: size 50px;
+}
+
+.my-image {
+    width: 900x;
+    height: auto; 
+    max-width: 100%;
+    object-fit: contain; 
+}

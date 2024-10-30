@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+.font1{  font-family: "Cutive Mono", monospace;word-spacing: -5px;
+    word-spacing: -5px;
+    letter-spacing: -1px; 
+    line-height: 1.2; 
+    }
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('img5/bg2004.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; 
+}
+
+
+.typewriter-container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.typewriter {
+    font-family: "Cutive Mono", monospace;word-spacing: -5px;
+    word-spacing: -3px;
+    letter-spacing: -1px; 
+    line-height: 1.5; 
+    color: #828282;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    animation: typing 10s steps(300, end) forwards, blink-caret 0.75s step-end infinite;
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+
+.back-button {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    font-family: Georgia, serif; 
+    font-size: 16px;
+    color: #e5ff00;
+    text-decoration: none; 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.back-button:hover {
+    background-color: rgba(200, 200, 200, 0.8); 
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; 
+    }
+}
+
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
